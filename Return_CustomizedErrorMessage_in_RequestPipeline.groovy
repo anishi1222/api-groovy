@@ -8,5 +8,5 @@ def length = json.toString().length().toString()
 // Content-Length should be set since content-length when modifying a request message.
 context.getClientResponse().withStatus(404).withBodyAsObject(json).withHeader("Content-Length",length).withHeader("Content-Type","application/json")
 
-// The following method is required when subsequent activities in pipeline should not be executed
+// The following method is required when you don't want subsequent activities in pipeline to be executed.
 context.forceResponse()
