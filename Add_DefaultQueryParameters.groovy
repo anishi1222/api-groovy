@@ -1,4 +1,4 @@
-// Add Default Query Parameters when these parameters are not passed
+// Add a default query parameter when this parameter is not passed.
 
 def key = 'pid'      // Key of QueryParameter
 def val = 'AUTO-123' // Value of QueryParameter
