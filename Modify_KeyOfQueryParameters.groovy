@@ -13,4 +13,4 @@ if( queryParams != null && queryParams.get(prevKey) != null) {
 }
 else {
     // No operate when an query parameter is not passed, or when target query parameter is not passed.
-    
+}
