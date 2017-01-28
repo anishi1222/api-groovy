@@ -1,4 +1,4 @@
-// Remove some element from API request and pass to backend service.
+// Remove some element from API request and pass it to backend service.
 // Redaction policy is much easier than this script. We strongly recommend using the Redaction policy.
 // 
 // Original message 
