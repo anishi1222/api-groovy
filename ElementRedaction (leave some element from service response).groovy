@@ -16,7 +16,7 @@
 
 // Retrieve the element "serviceID" from service response
 def body = context.getSouthboundResponse().getBodyAsType(String.class)
-def slurper = new groovay.json.JsonSlurper()
+def slurper = new groovy.json.JsonSlurper()
 
 def messageBody = (Map)slurper.parseText(body)
 def newMessage  = (Map)[:]
