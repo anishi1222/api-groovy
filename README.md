@@ -1,6 +1,6 @@
 #Groovy Script for API Platform
 
-Some samples are not recommended to use since it is much easier and safer to use policys than using script.
+Some samples are not recommended to use since it is much easier and safer to use policys than scripts.
 
 ## Modify HTTP Header
 1. [Add HTTP Header](Add_HTTPHeader.groovy)
