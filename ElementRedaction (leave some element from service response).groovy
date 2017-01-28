@@ -21,9 +21,9 @@ def slurper = new groovy.json.JsonSlurper()
 def messageBody = (Map)slurper.parseText(body)
 def newMessage  = (Map)[:]
 
-newMessage.add("serviceID", messageBody["serviceID"])
+newMessage.put("serviceID", (String)messageBody["serviceID"])
 
-def json = groovy.json.JsonOutput.toJson(newMessage)
+def json = groovy.json.JsonOutput.toJson((Map)newMessage)
 def length = json.toString().length().toString()
 
 context.getClientResponse().withBodyAsObject(json).withHeader("Content-Length",length)
