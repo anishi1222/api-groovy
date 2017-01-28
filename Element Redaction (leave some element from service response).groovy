@@ -1,4 +1,4 @@
-// Leave some element of response message received from backend service.
+// Leave only some element of response message and pass it as API response.
 // Redaction policy is much easier than this script. We strongly recommend using the Redaction policy.
 // 
 // Original message 
