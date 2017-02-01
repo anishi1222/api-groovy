@@ -13,6 +13,7 @@ Some samples are not recommended to use since it is much easier and safer to use
 ## Query Parameter
 1. [Add Default Query Parameters](Add_DefaultQueryParameters.groovy)
 2. [Modify Key Of Query Parameters](Modify_KeyOfQueryParameters.groovy)
+3. [Modify Value for Query Parameter](Modify Query Parameter Value.groovy)
 
 ## Modify Message
 1. Request Pipeline
