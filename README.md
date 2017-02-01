@@ -17,12 +17,13 @@ Some samples are not recommended to use since it is much easier and safer to use
 ## Modify Message
 1. Request Pipeline
     1. [Modify Message](Modify_Message_in_RequestPipeline.groovy)
-    2. [Remove some element from original API request](Element Redaction (remove some element from API request).groovy)
+    2. Remove some element from original API request
+        1. [Element Redaction] (Element Redaction (remove some element from API request).groovy)
     3. [Leave some element only from original API resquest](Element Redaction (leave some element from API request).groovy)
 2. Response Pipeline
     1. [Modify Message](Modify_Message_in_ResponsePipeline.groovy)
     2. Remove some element from original service response
-        1. [Element Redaction] (remove some element from service response).groovy)
+        1. [Element Redaction] (Element Redaction (remove some element from service response).groovy)
         2. [Remove JSON Array element(s) when some condition meets] (Remove Elements from JSON List.groovy)
     4. [Remove some element from original service response]
     3. [Leave some element only from original service response](Element Redaction (leave some element from service response).groovy)
