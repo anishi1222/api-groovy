@@ -28,8 +28,4 @@ Some samples are not recommended to use since it is much easier and safer to use
         2. [Remove JSON Array element(s) when some condition meets] (Remove Elements from JSON List.groovy)
     4. [Remove some element from original service response]
     3. [Leave some element only from original service response](Element Redaction (leave some element from service response).groovy)
-<!--
-## Service Callout
-1. [Service_CallOut](Service_CallOut.groovy)
 
--->
