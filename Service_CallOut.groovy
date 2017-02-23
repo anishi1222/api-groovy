@@ -1,5 +1,5 @@
 // Synchronous callout
-HTTPResponse response = context.createCallout()
+HttpResponse response = context.createCallout()
                         .withRequestUrl("http://myurl.com")
                         .withRequestMethod("GET").build().send()
 if( response.getStatus() != 200 ) {...}
