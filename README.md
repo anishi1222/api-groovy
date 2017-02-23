@@ -58,4 +58,4 @@ Some samples are not recommended to use since it is much easier and safer to use
         2. [Remove JSON Array element(s) when some condition meets](ocsg/RemoveElementsFromJSONList.groovy)
     3. [Leave some element only from original service response](ocsg/ElementRedaction_LleaveElementFromServiceResponse.groovy)
 
-### [Service Callout](ocsg/ServiceCallout.groovy)
+### [Service Callout](ocsg/ServiceCallOut.groovy)
