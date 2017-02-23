@@ -4,57 +4,58 @@ Some samples are not recommended to use since it is much easier and safer to use
 
 ## For APIPCS Groovy Policy
 ### Modify HTTP Header
-1. [Add HTTP Header](Add_HTTPHeader_apip.groovy)
-2. [Remove HTTP Header](Remove_HTTPHeader_apip.groovy)
+1. [Add HTTP Header](apip/AddHTTPHeader.groovy)
+2. [Remove HTTP Header](apip/RemoveHTTPHeader.groovy)
 
 ### Customized Error Message
-1. [Return Customized Error Message in Request Pipeline](Return_CustomizedErrorMessage_in_RequestPipeline_apip.groovy)
-2. [Return Customized Error Message in Response Pipeline](Return_CustomizedErrorMessage_in_ResponsePipeline_apip.groovy)
+1. [Return Customized Error Message in Request Pipeline](apip/ReturnCustomizedErrorMessageInRequestPipeline.groovy)
+2. [Return Customized Error Message in Response Pipeline](apip/ReturnCustomizedErrorMessageInResponsePipeline.groovy)
 
 ### Query Parameter
-1. [Add Default Query Parameters](Add_DefaultQueryParameters_apip.groovy)
-2. [Modify Key Of Query Parameters](Modify_KeyOfQueryParameters_apip.groovy)
-3. [Modify Value for Query Parameter](Modify Query Parameter Value_apip.groovy)
+1. [Add Default Query Parameters](apip/AddDefaultQueryParameter.groovy)
+2. [Modify Key Of Query Parameters](apip/ModifyQueryParameterKey.groovy)
+3. [Modify Value for Query Parameter](apip/ModifyQueryParameterValue.groovy)
 
 ### Modify Message
 1. Request Pipeline
-    1. [Modify Message](Modify_Message_in_RequestPipeline_apip.groovy)
+    1. [Modify Message](apip/ModifyMessageInRequestPipeline.groovy)
     2. Remove some element from original API request
-        1. [Element Redaction] (Element Redaction (remove some element from API request)_apip.groovy)
-        2. [Remove JSON Array element(s) when some condition meets] (Remove Elements from JSON List_apip.groovy)
-    3. [Leave some element only from original API resquest](Element Redaction (leave some element from API request)_apip.groovy)
+        1. [Element Redaction](apip/ElementRedaction_RemoveElementFromAPIRequest.groovy)
+        2. [Remove JSON Array element(s) when some condition meets](apip/RemoveElementsFromJSONList.groovy)
+    3. [Leave some element only from original API resquest](apip/ElementRedaction_LeaveElementFromAPIRequest.groovy)
 2. Response Pipeline
-    1. [Modify Message](Modify_Message_in_ResponsePipeline_apip.groovy)
+    1. [Modify Message](apip/ModifyMessageInResponsePipeline.groovy)
     2. Remove some element from original service response
-        1. [Element Redaction] (Element Redaction (remove some element from service response)_apip.groovy)
-        2. [Remove JSON Array element(s) when some condition meets] (Remove Elements from JSON List_apip.groovy)
-    3. [Leave some element only from original service response](Element Redaction (leave some element from service response)_apip.groovy)
+        1. [Element Redaction](apip/ElementRedaction_RemoveElementFromServiceResponse.groovy)
+        2. [Remove JSON Array element(s) when some condition meets](apip/RemoveElementsFromJSONList.groovy)
+    3. [Leave some element only from original service response](apip/ElementRedaction_LleaveElementFromServiceResponse.groovy)
 
-## For OCSG Groovy Actions
+## For OCSG Groovy Action
 ### Modify HTTP Header
-1. [Add HTTP Header](Add_HTTPHeader.groovy)
-2. [Remove HTTP Header](Remove_HTTPHeader.groovy)
+1. [Add HTTP Header](ocsg/AddHTTPHeader.groovy)
+2. [Remove HTTP Header](ocsg/RemoveHTTPHeader.groovy)
 
 ### Customized Error Message
-1. [Return Customized Error Message in Request Pipeline](Return_CustomizedErrorMessage_in_RequestPipeline.groovy)
-2. [Return Customized Error Message in Response Pipeline](Return_CustomizedErrorMessage_in_ResponsePipeline.groovy)
+1. [Return Customized Error Message in Request Pipeline](ocsg/ReturnCustomizedErrorMessageInRequestPipeline.groovy)
+2. [Return Customized Error Message in Response Pipeline](ocsg/ReturnCustomizedErrorMessageInResponsePipeline.groovy)
 
 ### Query Parameter
-1. [Add Default Query Parameters](Add_DefaultQueryParameters.groovy)
-2. [Modify Key Of Query Parameters](Modify_KeyOfQueryParameters.groovy)
-3. [Modify Value for Query Parameter](Modify Query Parameter Value.groovy)
+1. [Add Default Query Parameters](ocsg/AddDefaultQueryParameter.groovy)
+2. [Modify Key Of Query Parameters](ocsg/ModifyQueryParameterKey.groovy)
+3. [Modify Value for Query Parameter](ocsg/ModifyQueryParameterValue.groovy)
 
 ### Modify Message
 1. Request Pipeline
-    1. [Modify Message](Modify_Message_in_RequestPipeline.groovy)
+    1. [Modify Message](ocsg/ModifyMessageInRequestPipeline.groovy)
     2. Remove some element from original API request
-        1. [Element Redaction] (Element Redaction (remove some element from API request).groovy)
-        2. [Remove JSON Array element(s) when some condition meets] (Remove Elements from JSON List.groovy)
-    3. [Leave some element only from original API resquest](Element Redaction (leave some element from API request).groovy)
+        1. [Element Redaction](ocsg/ElementRedaction_RemoveElementFromAPIRequest.groovy)
+        2. [Remove JSON Array element(s) when some condition meets](ocsg/RemoveElementsFromJSONList.groovy)
+    3. [Leave some element only from original API resquest](ocsg/ElementRedaction_LeaveElementFromAPIRequest.groovy)
 2. Response Pipeline
-    1. [Modify Message](Modify_Message_in_ResponsePipeline.groovy)
+    1. [Modify Message](ocsg/ModifyMessageInResponsePipeline.groovy)
     2. Remove some element from original service response
-        1. [Element Redaction] (Element Redaction (remove some element from service response).groovy)
-        2. [Remove JSON Array element(s) when some condition meets] (Remove Elements from JSON List.groovy)
-    3. [Leave some element only from original service response](Element Redaction (leave some element from service response).groovy)
+        1. [Element Redaction] (ocsg/ElementRedaction_RemoveElementFromServiceResponse.groovy)
+        2. [Remove JSON Array element(s) when some condition meets](ocsg/RemoveElementsFromJSONList.groovy)
+    3. [Leave some element only from original service response](ocsg/ElementRedaction_LleaveElementFromServiceResponse.groovy)
 
+### [Service Callout](ocsg/ServiceCallout.groovy)
