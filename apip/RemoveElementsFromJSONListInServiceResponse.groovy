@@ -1,8 +1,43 @@
-// Retrieve the element "serviceID" from service response
-def newMessage  = (Map)[:]
-newMessage.put("serviceID", (String)context.serviceResponse.getBody().asJSONObject().get("serviceID"))
+/****
+Sample JSON message
+{
+  "products": [
+    {
+      "pid": "AUTO-201",
+      "base_info": {
+        "category": "AUTO",
+        "product_name": "AAAA“
+      }
+    },
+    {
+      "pid": "AUTO-123",
+      "base_info": {
+        "category": "AUTO",
+        "product_name": "BBBB"
+      }
+    },
+    {
+      "pid": "MARINE-100",
+      "base_info": {
+        "category": "MARINE",
+        "product_name": "CCCC"
+      }
+    }
+  ]
+}
+*****/
+def body = context.serviceResponse.getBody()
+def count = body.asJSONObject().getJSONArray("products").length()
 
-def json = groovy.json.JsonOutput.toJson((Map)newMessage)
-def newBody = new StringBodyImpl(json.toString(), "application/json")
-def length = newBody.asString().length().toString()
-context.apiResponse.setBody(newBody).setHeader("Content-Length",length)
+for(int i=0 ; i < count ; i++ ) {
+    if( body.asJSONObject()
+            .getJSONArray("products")
+            .getJSONObject(i)
+            .getJSONObject("base_info")
+            .getString("category") != “AUTO" ) {
+        body.asJSONObject().getJSONArray("products").remove(i)
+    }
+} 
+
+def length = body.asString().length().toString()
+context.apiResponse.setBody(body).setHeader("Content-Length", length)
