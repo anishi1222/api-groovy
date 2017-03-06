@@ -2,4 +2,4 @@
 context.serviceRequest.setHeader("X-ServiceRequest", "XXXX")
 
 // Add HTTP Header to API Response
-Context.apiResponse.setHeader("X-API_Response", "XXXX")
+context.apiResponse.setHeader("X-API_Response", "XXXX")
