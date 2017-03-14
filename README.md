@@ -1,4 +1,4 @@
-#Groovy Script for API Platform
+# Groovy Script for API Platform
 
 Some samples are not recommended to use since it is much easier and safer to use policys than scripts.
 
