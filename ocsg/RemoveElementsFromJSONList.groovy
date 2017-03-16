@@ -31,8 +31,8 @@ def slurper = new groovy.json.JsonSlurper()
 
 def messageBody = (Map)slurper.parseText(body)
 def products = (List)messageBody.products
-
-for(int i=0 ; i < products.size() ; i++ ) {
+def count = products.size()
+for(int i=0 ; i < count ; i++ ) {
     if( (String)products[i]["base_info"]["category"] == "MARINE" ) {
         products.remove(i)
     }
