@@ -40,7 +40,7 @@ Some samples are not recommended to use since it is much easier and safer to use
 2. [Return Customized Error Message in Response Pipeline](ocsg/ReturnCustomizedErrorMessageInResponsePipeline.groovy)
 
 ### Query Parameter
-1. [Add Default Query Parameters](ocsg/AddDefaultQueryParameter.groovy)
+1. [Add Default Query Parameters](ocsg/AddDefaultQueryParameters.groovy)
 2. [Modify Key Of Query Parameters](ocsg/ModifyQueryParameterKey.groovy)
 3. [Modify Value for Query Parameter](ocsg/ModifyQueryParameterValue.groovy)
 
