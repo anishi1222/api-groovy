@@ -21,13 +21,13 @@ Some samples are not recommended to use since it is much easier and safer to use
     1. [Modify Message](apip/ModifyMessageInRequestPipeline.groovy)
     2. Remove some element from original API request
         1. [Element Redaction](apip/ElementRedaction_RemoveElementFromAPIRequest.groovy)
-        2. [Remove JSON Array element(s) when some condition meets](apip/RemoveElementsFromJSONList.groovy)
+        2. [Remove JSON Array element(s) when some condition meets](apip/RemoveElementsFromJSONListInAPIRequest.groovy)
     3. [Leave only some element from original API resquest](apip/ElementRedaction_LeaveElementFromAPIRequest.groovy)
 2. Response Pipeline
     1. [Modify Message](apip/ModifyMessageInResponsePipeline.groovy)
     2. Remove some element from original service response
         1. [Element Redaction](apip/ElementRedaction_RemoveElementFromServiceResponse.groovy)
-        2. [Remove JSON Array element(s) when some condition meets](apip/RemoveElementsFromJSONList.groovy)
+        2. [Remove JSON Array element(s) when some condition meets](apip/RemoveElementsFromJSONListInServiceResponse.groovy)
     3. [Leave some element only from original service response](apip/ElementRedaction_LleaveElementFromServiceResponse.groovy)
 
 ## For OCSG Groovy Action
