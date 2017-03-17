@@ -32,8 +32,7 @@ def slurper = new groovy.json.JsonSlurper()
 def messageBody = (Map)slurper.parseText(body)
 def products = (List)messageBody.products
 
-def matched = products.findAll{it["base_info"]["category"] == "MARINE" }
-messageBody.products = products - matched
+messageBody.products = products.findAll{it["base_info"]["category"] != "MARINE" }
 
 def json = groovy.json.JsonOutput.toJson(messageBody);
 def length = json.toString().length().toString()
