@@ -3,8 +3,8 @@ def newKey = 'pid'
 def queryParams = (Map)context.apiRequest.getQueryParams()
 
 // Change key of query parameter when target parameter is set
-if( queryParams != null && queryParams.get(prevKey) != null) {
-    def val = (String)queryParams.get(prevKey).get(0);
+if( queryParams != null && queryParams.containsKey(prevKey) != null) {
+    def val = (String)((List)queryParams.get(prevKey)).get(0);
     context.serviceRequest.withoutQueryParam(prevKey)
     context.serviceRequest.setQueryParam(newKey, val)
 }
