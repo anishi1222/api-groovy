@@ -1,6 +1,7 @@
 # Groovy Script for API Platform
 
-Some samples are not recommended to use since it is much easier and safer to use policys than scripts.
+- Some samples are not recommended to use since it is much easier and safer to use policys than scripts.
+- As these are for sample use only, they contains non-performance-optimized and non-exception-handling codes.
 
 ## For APIPCS Groovy Policy
 ### Modify HTTP Header
