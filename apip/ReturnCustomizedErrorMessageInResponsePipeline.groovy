@@ -10,4 +10,4 @@ def json = groovy.json.JsonOutput.toJson(messageBody)
 def errorId = "XXXX"
 context.apiResponse.setHeader("Content-Type","application/json")
 
-throw new oracle.apiplatform.policies.sdk.exceptions.PolicyProcessingError(errorId, 400, json.toString())
+throw new oracle.apiplatform.policies.sdk.exceptions.PolicyProcessingException(errorId, 400, json.toString())
