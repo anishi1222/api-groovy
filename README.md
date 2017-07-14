@@ -16,6 +16,7 @@
 1. [Add Default Query Parameters](apip/AddDefaultQueryParameter.groovy)
 2. [Modify Key Of Query Parameters](apip/ModifyQueryParameterKey.groovy)
 3. [Modify Value for Query Parameter](apip/ModifyQueryParameterValue.groovy)
+4. [Convert Path parameters to Query Parameters](apip/ConvertPathParam2QueryParam.groovy)
 
 ### Modify Message
 1. Request Pipeline
