@@ -21,4 +21,5 @@ if( token.length != 6 ) {
                                                                                    "Both items (From, To) are mandatory.")
 }
 // set query parameters for backend service
+// To avoid passing path parameters, PathInfo should be initialized using setPathInfo()
 context.ServiceRequest.setPathInfo("").setQueryParam("from", token[4]).setQueryParam("to", token[5])
