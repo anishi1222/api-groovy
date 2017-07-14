@@ -1,11 +1,10 @@
-// --------------------------------------------------
+// --------------------------------------------------------------------
 //  (API request)     {host}:{port}/api/v1/airports/{From}/{To}
 //  (Backend Service) {host}:{port}/airports?from={From}&to={To}
-// --------------------------------------------------
+// --------------------------------------------------------------------
 
 // set Path Info to variable (pathInfo)
 def pathInfo = context.ApiRequest.getPathInfo()
-// println pathInfo
 
 // split pathInfo into tokens with "/"
 def token = pathInfo.split('/')
@@ -21,6 +20,5 @@ if( token.length != 6 ) {
                                                                                    json.toString(), 
                                                                                    "Both items (From, To) are mandatory.")
 }
-
 // set query parameters for backend service
-context.ServiceRequest.setQueryParam("from", token[4]).setQueryParam("to", token[5])
+context.ServiceRequest.setPathInfo("").setQueryParam("from", token[4]).setQueryParam("to", token[5])
