@@ -34,7 +34,7 @@ for(int i=0 ; i < count ; i++ ) {
             .getJSONArray("products")
             .getJSONObject(i)
             .getJSONObject("base_info")
-            .getString("category") != “AUTO" ) {
+            .getString("category") != "AUTO" ) {
         body.asJSONObject().getJSONArray("products").remove(i)
     }
 } 
