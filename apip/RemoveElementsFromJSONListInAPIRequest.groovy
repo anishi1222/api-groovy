@@ -27,7 +27,7 @@
 }
 *****/
 
-def body = context.apiRequest.getBody()
+def body = context.ApiRequest.getBody()
 def count = body.asJSONObject().getJSONArray("products").length()
 
 for(int i=0 ; i < count ; i++ ) {
@@ -41,4 +41,4 @@ for(int i=0 ; i < count ; i++ ) {
 } 
 
 def length = body.asString().length().toString()
-context.serviceRequest.setBody(body).setHeader("Content-Length", length)
+context.ServiceRequest.setBody(body).setHeader("Content-Length", length)
