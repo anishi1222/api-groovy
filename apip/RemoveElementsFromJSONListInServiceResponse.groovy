@@ -26,7 +26,7 @@ Sample JSON message
   ]
 }
 *****/
-def body = context.serviceResponse.getBody()
+def body = context.ServiceResponse.getBody()
 def count = body.asJSONObject().getJSONArray("products").length()
 
 for(int i=0 ; i < count ; i++ ) {
@@ -40,4 +40,4 @@ for(int i=0 ; i < count ; i++ ) {
 } 
 
 def length = body.asString().length().toString()
-context.apiResponse.setBody(body).setHeader("Content-Length", length)
+context.ApiResponse.setBody(body).setHeader("Content-Length", length)
