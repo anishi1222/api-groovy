@@ -14,7 +14,7 @@ if( token.length != 6 ) {
     def messageBody = ["errorCode": "MANDATORY_ITEMS_MISSING"]
     def json = groovy.json.JsonOutput.toJson(messageBody)
     def errorId = "A001"
-    context.apiResponse.setHeader("Content-Type","application/json")
+    context.ApiResponse.setHeader("Content-Type","application/json")
     throw new oracle.apiplatform.policies.sdk.exceptions.PolicyProcessingException(errorId, 
                                                                                    404, 
                                                                                    json.toString(), 
