@@ -19,7 +19,7 @@ callout.sendAsync(callback)
 
 /* -----------------------------------
  *
- * Substitute groovy script policy...
+ * Subsequent groovy script policy...
  *
  * -----------------------------------*/
 Body calloutBody = (Body)context.getAttribute("response1")
