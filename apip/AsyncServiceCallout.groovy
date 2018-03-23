@@ -22,5 +22,5 @@ ExternalServiceCallout.Callback callback = new ExternalServiceCallout.Callback()
 }
 
 // Configure URL and Method as you like
-callout.setRequestURL("URL").setMethod("Mehthod");
+callout.setRequestURL("URL").setMethod("Method");
 callout.sendAsync(callback);
