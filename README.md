@@ -32,7 +32,7 @@
         2. [Remove JSON Array element(s) when some condition meets](apip/RemoveElementsFromJSONListInServiceResponse.groovy)
     3. [Leave some element only from original service response](apip/ElementRedaction_LleaveElementFromServiceResponse.groovy)
 
-### [Service Callout](apip/AsyncServiceCallOut.groovy)
+### [Service Callout](apip/AsyncServiceCallout.groovy)
 
 ## For OCSG Groovy Action
 ### Modify HTTP Header
