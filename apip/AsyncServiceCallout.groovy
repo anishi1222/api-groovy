@@ -4,7 +4,7 @@ ExternalServiceCallout.Callback callback = new ExternalServiceCallout.Callback()
     boolean onCompleted(ServiceResponse response) throws PolicyProcessingException {
         println "Response: " + response.getBody().asString()
         // If you want to use the response later, store the response using setAttribute() or setEdr() 
-        context.setAttribute("response1", response.getBody())
+        context.setAttribute("response1", response)
         return true
     }
 
@@ -22,5 +22,6 @@ callout.sendAsync(callback)
  * Subsequent groovy script policy...
  *
  * -----------------------------------*/
-Body calloutBody = (Body)context.getAttribute("response1")
-println calloutBody.getString()
+ServiceResponse calloutResponse1 = (Body)context.getAttribute("response1")
+println calloutResponse1.getBody().getString()
+println calloutResponse1.getStatusCode()
