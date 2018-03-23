@@ -22,6 +22,6 @@ callout.sendAsync(callback)
  * Subsequent groovy script policy...
  *
  * -----------------------------------*/
-ServiceResponse calloutResponse1 = (Body)context.getAttribute("response1")
+ServiceResponse calloutResponse1 = (ServiceResponse)context.getAttribute("response1")
 println calloutResponse1.getBody().getString()
 println calloutResponse1.getStatusCode()
