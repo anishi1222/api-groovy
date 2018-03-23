@@ -10,5 +10,7 @@ ExternalServiceCallout.Callback callback = new ExternalServiceCallout.Callback()
             return true;
        }
 }
-callout.setRequestURL("https://reqres.in/api/users").setMethod("GET")
+
+// As ExternalServiceCallout extends ServiceRequest, you can invoke any APIs even if request message is mandatory.
+callout.setRequestURL("API URL").setMethod("HTTP Method")
 callout.sendAsync(callback)
