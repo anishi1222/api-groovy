@@ -8,7 +8,7 @@
 1. [Add HTTP Header](apip/AddHTTPHeader.groovy)
 2. [Remove HTTP Header](apip/RemoveHTTPHeader.groovy)
 
-### Customized Error Message : These samples don't work due to changing API specifications.
+### Customized Error Message :
 1. [Return Customized Error Message in Request Pipeline](apip/ReturnCustomizedErrorMessageInRequestPipeline.groovy)
 2. [Return Customized Error Message in Response Pipeline](apip/ReturnCustomizedErrorMessageInResponsePipeline.groovy)
 
