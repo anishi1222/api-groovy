@@ -8,10 +8,10 @@
 1. [Add HTTP Header](apip/AddHTTPHeader.groovy)
 2. [Remove HTTP Header](apip/RemoveHTTPHeader.groovy)
 
-### Customized Error Message
+<!-- ### Customized Error Message
 1. [Return Customized Error Message in Request Pipeline](apip/ReturnCustomizedErrorMessageInRequestPipeline.groovy)
 2. [Return Customized Error Message in Response Pipeline](apip/ReturnCustomizedErrorMessageInResponsePipeline.groovy)
-
+-->
 ### Query Parameter
 1. [Add Default Query Parameters](apip/AddDefaultQueryParameter.groovy)
 2. [Modify Key Of Query Parameters](apip/ModifyQueryParameterKey.groovy)
