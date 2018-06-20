@@ -11,13 +11,11 @@ def token = pathInfo.split('/')
 
 // if length of token (array) is not equal to 6, raise 404.
 if( token.length != 6 ) {
-    def messageBody = ["errorCode": "MANDATORY_ITEMS_MISSING"]
-    def json = groovy.json.JsonOutput.toJson(messageBody)
     def errorId = "A001"
     context.ApiResponse.setHeader("Content-Type","application/json")
     throw new oracle.apiplatform.policies.sdk.exceptions.PolicyProcessingException(errorId, 
-                                                                                   404, 
-                                                                                   json.toString(), 
+                                                                                   400, 
+                                                                                   "MANDATORY_ITEMS_MISSING", 
                                                                                    "Both items (From, To) are mandatory.")
 }
 // set query parameters for backend service
